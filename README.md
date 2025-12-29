@@ -1,102 +1,60 @@
-# PHP to UML Generator
+# PHP Architect
 
-A powerful tool that automatically generates UML class diagrams from PHP source code. This tool helps developers visualize their PHP codebase structure through interactive UML diagrams.
+![License](https://img.shields.io/github/license/AzarguNazari/PHP-To-UML?style=flat-square)
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
 
-## 🌟 Features
+![Demo Screenshot](phpuml.png)
 
-- **Easy File Upload**: Simple interface to upload PHP files
-- **Interactive UML Diagrams**: Pan, zoom, and interact with generated diagrams
-- **Export Capability**: Download generated UML diagrams as PNG images
-- **Multiple File Support**: Upload and analyze multiple PHP files simultaneously
-- **Real-time Generation**: Instant UML diagram generation
-- **Interactive Canvas**: Easy navigation and manipulation of the generated diagram
+A professional, modern tool that automatically generates UML class diagrams from PHP source code. Visualize your architecture instantly with a sleek, premium interface.
 
-## 🚀 Quick Start
+## Features
+
+-   **Instant Visualization**: Upload PHP files and see interactive UML class diagrams in seconds.
+-   **No Background Dependencies**: Powered by a Node.js AST parser—no PHP runtime required on the server.
+-   **Premium UI**: Built with Next.js, Tailwind CSS, and Shadcn UI for a fast, responsive, and gorgeous experience.
+-   **Export Capability**: Download your architectural diagrams as high-resolution PNG images.
+-   **Multi-file Support**: Analyze complex relationships across multiple classes and interfaces simultaneously.
+-   **Standard Notation**: Supports standard UML notation including visibility, relationships (extends/implements), and methods.
+
+## Getting Started
 
 ### Prerequisites
 
-- PHP 5.0 or higher
-- Web server (Apache/Nginx)
-- Modern web browser
+-   Node.js 20.x or higher
+-   npm, yarn, or pnpm
 
 ### Installation
 
-#### Using Docker (Recommended)
-```bash
-# Clone the repository
-git clone https://github.com/AzarguNazari/PHP-To-UML.git
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/AzarguNazari/PHP-To-UML.git
+    cd PHP-To-UML
+    ```
 
-# Navigate to project directory
-cd PHP-To-UML
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
 
-# Start the containers
-docker-compose up -d
+3.  **Run in development mode**
+    ```bash
+    npm run dev
+    ```
+    Access the application at `http://localhost:3000`.
 
-# Access the application at
-http://localhost
-```
+## Technology Stack
 
-#### Manual Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AzarguNazari/PHP-To-UML.git
-   ```
-2. Copy the files to your web server directory:
-   ```bash
-   cp -r PHP-To-UML/* /var/www/html/
-   ```
-3. Access through your web browser at `http://localhost`
+-   **Framework**: [Next.js 16](https://nextjs.org/)
+-   **Language**: [TypeScript](https://www.typescriptlang.org/)
+-   **Styling**: [Tailwind CSS](https://tailwindcss.com/) & [Shadcn UI](https://ui.shadcn.com/)
+-   **Parser**: [php-parser](https://www.npmjs.com/package/php-parser)
+-   **Diagram Engine**: [nomnoml](http://www.nomnoml.com/)
 
-## 📖 How to Use
+## Contributing
 
-1. **Access the Tool**
-   - Open your web browser and navigate to the application URL
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-2. **Upload PHP Files**
-   - Click on the upload button
-   - Select one or multiple PHP files containing your classes
-   - Click "Upload" to generate the UML diagram
+## License
 
-3. **Interact with the Diagram**
-   - Use mouse wheel to zoom in/out
-   - Click and drag to pan around the diagram
-   - Click the download button to save the diagram as PNG
-
-## 🎯 Example Usage
-
-The repository includes example PHP files that you can use to test the tool:
-- [Example 1](https://github.com/AzarguNazari/PHP-To-UML/tree/master/src/Tests/test1)
-- [Example 2](https://github.com/AzarguNazari/PHP-To-UML/tree/master/src/Tests/test2)
-
-### Process Flow
-
-1. **Upload Page**
-   ![The uploading files page](https://github.com/AzarguNazari/PHPtoUML/blob/master/snapshot/input%20option.png)
-
-2. **Generation Process**
-   ![Generating](https://github.com/AzarguNazari/PHPtoUML/blob/master/snapshot/geneating.png)
-
-3. **Final Result**
-   ![Generated UML Diagram](https://github.com/AzarguNazari/PHPtoUML/blob/master/snapshot/generatedUML.png)
-
-## 🛠️ Technical Details
-
-- Built with PHP 5.0
-- Uses HTML5 Canvas for diagram rendering
-- Implements object-oriented design principles
-- Supports standard UML class diagram notation
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🔍 Support
-
-If you encounter any issues or have questions, please [open an issue](https://github.com/AzarguNazari/PHP-To-UML/issues) on GitHub.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
